@@ -8,6 +8,7 @@ Requires [Shadowbox.js](https://github.com/mjackson/shadowbox)
 
 Allows you to hook up Shadowbox when your HTML is rendered by Angular, for example with `ng-repeat`.
 
+Here is a [Demo page](https://cdn.rawgit.com/aderowbotham/ng-shadowbox/master/demo/index.html)
 
 
 ## Attributes
@@ -16,6 +17,9 @@ Allows you to hook up Shadowbox when your HTML is rendered by Angular, for examp
 * ngShadowboxPlayer - Optional. Sets the player type. Defaults to "img"
 * ngShadowboxGallery - Optional. Sets the gallery name passed to Shadowbox.
 * title - Optional. Standard title attribute. Passed as the title of the Shadowbox instance if set.
+
+
+
 
 ## Usage
 
