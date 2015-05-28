@@ -4,6 +4,18 @@ Lightweight Angular directive to trigger Shadowbox from AngularJS
 
 Requires [Shadowbox.js](https://github.com/mjackson/shadowbox)
 
+## Overview
+
+Allows you to hook up Shadowbox when your HTML is rendered by Angular, for example with `ng-repeat`.
+
+
+
+## Attributes
+
+* ngShadowbox - Required. Defines the url of the resource to be loaded into Shadowbox.
+* ngShadowboxPlayer - Optional. Sets the player type. Defaults to "img"
+* ngShadowboxGallery - Optional. Sets the gallery name passed to Shadowbox.
+* title - Optional. Standard title attribute. Passed as the title of the Shadowbox instance if set.
 
 ## Usage
 
