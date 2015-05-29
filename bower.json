@@ -1,0 +1,12 @@
+{
+  "name": "ng-shadowbox",
+  "version": "0.0.1",
+  "authors": [
+    "Adrian Rowbotham <aderowbotham@gmail.com>"
+  ],
+  "description": "Angular directive wrapper for Shadowbox.js",
+  "ignore": ["bower_components"],
+  "dependencies": {
+    "angular": "#>=1.3"
+  }
+}
