@@ -22,9 +22,11 @@ angular.module('ngShadowbox', []).directive('ngShadowbox', function($window) {
       var playerTitle = attrs.title ? attrs.title : "Shadowbox";
       var playerType = attrs.ngShadowboxPlayer ? attrs.ngShadowboxPlayer : "img";
       var gallery = attrs.ngShadowboxGallery ? attrs.ngShadowboxGallery : "ng-shadowbox";
+      var width = attrs.ngShadowboxWidth ? attrs.ngShadowboxWidth : false;
 
       element.bind('click', function() {
-        $window.Shadowbox.open({
+
+        var opts = {
           content:    attrs.ngShadowbox,
           title:      playerTitle,
           player:     playerType,
@@ -32,7 +34,13 @@ angular.module('ngShadowbox', []).directive('ngShadowbox', function($window) {
           options:  {
             handleOversize: "resize"
           }       
-        });
+        }
+
+        if(width){
+          opts.width = width;
+        }
+
+        $window.Shadowbox.open(opts);
       });
     }
   }

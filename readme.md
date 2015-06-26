@@ -16,6 +16,7 @@ Here is a [Demo page](https://cdn.rawgit.com/aderowbotham/ng-shadowbox/master/de
 * ngShadowbox - Required. Defines the url of the resource to be loaded into Shadowbox.
 * ngShadowboxPlayer - Optional. Sets the player type. Defaults to "img"
 * ngShadowboxGallery - Optional. Sets the gallery name passed to Shadowbox.
+* ngShadowboxWidth - Optional. Sets the width passed to Shadowbox. Use this with the iFrame player type to override the automatic width.
 * title - Optional. Standard title attribute. Passed as the title of the Shadowbox instance if set.
 
 
