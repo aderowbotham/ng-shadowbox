@@ -11,6 +11,10 @@ Allows you to hook up Shadowbox when your HTML is rendered by Angular, for examp
 Here is a [Demo page](https://cdn.rawgit.com/aderowbotham/ng-shadowbox/master/demo/index.html)
 
 
+## Installation
+
+`bower install ng-shadowbox`
+
 ## Attributes
 
 * ngShadowbox - Required. Defines the url of the resource to be loaded into Shadowbox.
@@ -59,4 +63,3 @@ JavaScript
          }
       ];
     }]);
-
