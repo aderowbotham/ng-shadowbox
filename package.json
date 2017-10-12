@@ -1,0 +1,26 @@
+{
+  "name": "ng-shadowbox",
+  "version": "1.1.0",
+  "description": "Angular directive wrapper for Shadowbox.js",
+  "main": "dist/ng-shadowbox.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-ng-annotate": "^3.0.0",
+    "grunt-remove": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aderowbotham@github.com/aderowbotham/ng-shadowbox.git"
+  },
+  "author": "Adrian Rowbotham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aderowbotham/ng-shadowbox/issues"
+  },
+  "homepage": "https://github.com/aderowbotham/ng-shadowbox#readme"
+}

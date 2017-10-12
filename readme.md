@@ -15,6 +15,8 @@ Here is a [Demo page](https://cdn.rawgit.com/aderowbotham/ng-shadowbox/master/de
 
 `bower install ng-shadowbox`
 
+Note that NPM and Grunt are only needed if you want to recompile the minified version `dist/ng-shadowbox.min.js`, which is already included. If you do wish to do that run `$ npm install` then `$ grunt`
+
 ## Attributes
 
 * ngShadowbox - Required. Defines the url of the resource to be loaded into Shadowbox.

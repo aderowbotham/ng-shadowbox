@@ -2,19 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
+
         <title>ng-shadowbox demo</title>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       
+
         <link rel="stylesheet" href="demo.css">
         <link rel="stylesheet" href="shadowbox-3.0.3/shadowbox.css">
 
         <script src="shadowbox-3.0.3/shadowbox.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
         <script src="demo.js"></script>
-        <script src="../dist/ng-shadowbox.js"></script>
+        <script src="../dist/ng-shadowbox.min.js"></script>
 
     </head>
 
@@ -24,10 +24,12 @@
         <h1>ng-shadowbox demo</h1>
 
         <h2>Images</h2>
-        <a ng-repeat="link in links" ng-shadowbox="images/{{ link.href }}" title="{{ link.title }}">{{ link.title }}</a>
+        <a ng-repeat="link in links" ng-shadowbox="{{ link.href }}" title="{{ link.title }}">{{ link.title }}</a>
 
         <h2>Document</h2>
-        <a ng-shadowbox="https://aderowbotham.com" ng-shadowbox-player="iframe" ng-shadowbox-width="600" title="iFrame link">iFrame link</a>
+        <a ng-shadowbox="https://aderowbotham.com" ng-shadowbox-player="iframe" ng-shadowbox-width="600" title="iFrame link">i-frame 600px wide</a>
+
+        <a ng-shadowbox="https://aderowbotham.com" ng-shadowbox-player="iframe" ng-shadowbox-width="500"  ng-shadowbox-height="400" title="iFrame link">i-frame 500px x 400px</a>
 
       </div>
     </body>

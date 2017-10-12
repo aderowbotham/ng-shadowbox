@@ -21,10 +21,11 @@
           throw Error("No Shadobox target found");
         }
 
-        var playerTitle = attrs.title ? attrs.title : "Shadowbox";
+        var playerTitle = attrs.title ? attrs.title : "ng-shadowbox";
         var playerType = attrs.ngShadowboxPlayer ? attrs.ngShadowboxPlayer : "img";
         var gallery = attrs.ngShadowboxGallery ? attrs.ngShadowboxGallery : "ng-shadowbox";
-        var width = attrs.ngShadowboxWidth ? attrs.ngShadowboxWidth : false;
+        var width = attrs.ngShadowboxWidth ? attrs.ngShadowboxWidth : null;
+        var height = attrs.ngShadowboxHeight ? attrs.ngShadowboxHeight : null;
 
         element.bind("click", function() {
 
@@ -40,6 +41,10 @@
 
           if(width){
             opts.width = width;
+          }
+
+          if(height){
+            opts.height = height;
           }
 
           $window.Shadowbox.open(opts);
